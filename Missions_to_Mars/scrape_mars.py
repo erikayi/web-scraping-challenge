@@ -2,14 +2,16 @@ import pandas as pd
 from splinter.exceptions import ElementDoesNotExist
 from splinter import Browser
 from bs4 import BeautifulSoup as bs
+from flask import request
 import requests
 import os
 import time
 import simplejson as json
 
 
+
 def init_browser():
-    json = FlaskJSON(mars_data)
+    json = request.get_json()
     # Replace the path with your actual path to the chromedriver
     executable_path = {'executable_path': 'chromedriver.exe'}
     return Browser('chrome', **executable_path, headless=False)
@@ -84,4 +86,5 @@ def scrape_info():
     browser.quit()
 
     # Return results
+    mars_data[0].encode('ascii','ignore').decode()
     return json.load(mars_data)

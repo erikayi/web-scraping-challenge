@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, jsonify, request
 from flask_pymongo import PyMongo
 import scrape_mars
 

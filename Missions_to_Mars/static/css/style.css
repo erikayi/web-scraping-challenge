@@ -1,4 +1,6 @@
-body {
+@media media-breakpoint-up(sm) { 
+    
+    body {
     margin: 50px;
     padding: 50px;
 }
@@ -21,3 +23,6 @@ table {
     border-radius: 5px;
     border-color: teal;
 }
+
+}
+

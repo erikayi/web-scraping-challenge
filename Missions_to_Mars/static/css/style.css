@@ -16,3 +16,8 @@ body {
 .title {
     text-align: center;
 }
+
+table {
+    border-radius: 5px;
+    border-color: teal;
+}

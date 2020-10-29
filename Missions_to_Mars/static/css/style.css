@@ -1,0 +1,13 @@
+body {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.card {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.title {
+    text-align: center;
+}

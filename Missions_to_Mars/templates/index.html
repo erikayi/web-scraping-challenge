@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Mars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron text-center">
+            <h1>Mission To Mars</h1>
+            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 d-flex justify-content-center">
+                <h1>Latest Mars News</h1>
+                <p>{{ mars.title_p }}</p>
+                <strong>
+                    <p>NASA InSight's Mole Is Out of Sight</p>
+                </strong>
+                <p>{{ mars.paragraph_p }}</p>
+                <p>Now that the heat probe is just below the Martian surface, InSight's arm will scoop some additional
+                    soil on top to help it keep digging so it can take Mars' temperature.</p>
+
+                <h1>Featured Mars Image</h1>
+                <p>{{ mars.featured_image_url }}</p>
+                <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA24098_hires.jpg"
+                    alt="Mars Featured Image" height="800" width="800">
+            </div>
+
+            <div class="col-sm-6 d-flex justify-content-center">
+                <h3>Mars Fact</h3>
+                <vacation class="Mars_Facts.html">
+                    <p>{{ mars.mars_df }}</p>
+                    <table class="table table-hover table-responsive-sm">
+                        <thead>
+                            <tr>
+                                <th colspan="2" style="width:12%">About Mars</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th style="width:12%">Equatorial Diameter</th>
+                                <td>6,792 km</td>
+                            </tr>
+                            <tr>
+                                <th style="width:12%">Polar Diameter</th>
+                                <td>6,752 km</td>
+                            </tr>
+                            <tr>
+                                <th style="width:12%">Mass</th>
+                                <td>6.39 × 10^23 kg (0.11 Earths)</td>
+                            </tr>
+                            <tr>
+                                <th style="width:12%">Moons</th>
+                                <td>2 (Phobos &amp; Deimos)</td>
+                            </tr>
+                            <tr>
+                                <th style="width:12%">Orbt Distance</th>
+                                <td>227,943,824 km (1.38 AU)</td>
+                            </tr>
+                            <tr>
+                                <th style="width:12%">Orbit Period</th>
+                                <td>687 days (1.9 years)</td>
+                            </tr>
+                            <tr>
+                                <th style="width:12%">Surface Temperature</th>
+                                <td>-87 to -5 °C</td>
+                            </tr>
+                            <tr>
+                                <th style="width:12%">First Record</th>
+                                <td>2nd millennium BC</td>
+                            </tr>
+                            <tr>
+                                <th style="width:12%">Recorded By</th>
+                                <td>Egyptian astronomers</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </vacation>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+    <div class="w-100"></div>
+    <div class="col">
+        <h1 class="title">Mars Hemispheres</h1>
+        <hr>
+        <vacation class="mars_data"></vacation>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="card" style="width: 500px">
+                        <img class="card-img-top"
+                            src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg"
+                            alt="Card image top" height="500px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title">Cerberus Hemisphere Enhanced</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="card" style="width: 500px">
+                        <img class="card-img-top"
+                            src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/schiaparelli_enhanced.tif/full.jpg"
+                            alt="Card image top" height="500px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title">Schiaparelli Hemisphere Enhanced</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="card" style="width: 500px">
+                        <img class="card-img-top"
+                            src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg"
+                            alt="Card image top" height="500px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title">Syrtis Major Hemisphere Enhanced</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="card" style="width: 500px">
+                        <img class="card-img-top"
+                            src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg"
+                            alt="Card image top" height="500px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title">Valles Marineris Hemisphere Enhanced</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

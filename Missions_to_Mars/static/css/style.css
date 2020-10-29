@@ -1,11 +1,16 @@
 body {
-    padding-right: 50px;
-    padding-left: 50px;
+    margin: 50px;
+    padding: 50px;
 }
 
 .card {
     text-align: center;
-    padding-bottom: 10px;
+    padding: 15px;
+}
+
+.card-img-top {
+    margin: 5px;
+    padding: 5px;
 }
 
 .title {

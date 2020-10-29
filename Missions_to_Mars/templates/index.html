@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All About Mars</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
@@ -29,15 +30,19 @@
 
                 <h1>Featured Mars Image</h1>
                 <p>{{ mars.featured_image_url }}</p>
-                <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA24098_hires.jpg"
-                    alt="Mars Featured Image" height="800" width="800">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-6">
+                        <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA24098_hires.jpg" 
+                        alt="Mars Featured Image" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
             </div>
 
-            <div class="col-sm-6 d-flex justify-content-center">
+            <div class="col-sm-6 col-sm-3 d-flex justify-content-center">
                 <h3>Mars Fact</h3>
                 <vacation class="Mars_Facts.html">
                     <p>{{ mars.mars_df }}</p>
-                    <table class="table table-hover table-responsive-sm">
+                    <table class="table table-hover table-responsive-sm table-responsive-xs">
                         <thead>
                             <tr>
                                 <th colspan="2" style="width:12%">About Mars</th>
@@ -97,44 +102,44 @@
         <vacation class="mars_data"></vacation>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 500px">
+                <div class="col-sm-6 col-xs-3">
+                    <div class="card">
                         <img class="card-img-top"
-                            src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg"
-                            alt="Card image top" height="500px" width="500px">
+                            src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg" 
+                            alt="Card image top" height="500px" width="500px" class="rounded mx-auto d-block" class="img-fluid img-thumbnail">
                         <div class="card-body">
                             <h3 class="card-title">Cerberus Hemisphere Enhanced</h3>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 500px">
+                <div class="col-sm-6 col-xs-3">
+                    <div class="card">
                         <img class="card-img-top"
                             src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/schiaparelli_enhanced.tif/full.jpg"
-                            alt="Card image top" height="500px" width="500px">
+                            alt="Card image top" height="500px" width="500px" class="rounded mx-auto d-block" class="img-fluid img-thumbnail">
                         <div class="card-body">
                             <h3 class="card-title">Schiaparelli Hemisphere Enhanced</h3>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 500px">
+                <div class="col-sm-6 col-xs-3">
+                    <div class="card">
                         <img class="card-img-top"
                             src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg"
-                            alt="Card image top" height="500px" width="500px">
+                            alt="Card image top" height="500px" width="500px" class="rounded mx-auto d-block" class="img-fluid img-thumbnail">
                         <div class="card-body">
                             <h3 class="card-title">Syrtis Major Hemisphere Enhanced</h3>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 500px">
+                <div class="col-sm-6 col-xs-3">
+                    <div class="card">
                         <img class="card-img-top"
-                            src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg"
-                            alt="Card image top" height="500px" width="500px">
+                            src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg" 
+                            alt="Card image top" height="500px" width="500px" class="rounded mx-auto d-block" class="img-fluid img-thumbnail">
                         <div class="card-body">
                             <h3 class="card-title">Valles Marineris Hemisphere Enhanced</h3>
                         </div>

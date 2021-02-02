@@ -23,6 +23,15 @@
 body {
     margin: 50px;
     padding: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.media-heading {
+    font-weight: bold;
+}
+
+.caption {
+    font-weight: bold;
 }
 
 .card {

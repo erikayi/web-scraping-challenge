@@ -26,6 +26,7 @@ and `Mars Hemisphere Image urls`.
 ## MongoDB + Flask App 
 
 * Following images are working application in a local server. 
+* Used Bootstrap for layout designs, which will work on all screen sizes. 
 
 ![scrapingImages](Images/scraping_final_1.png)
 
